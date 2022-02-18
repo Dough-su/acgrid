@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>调个色</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="/assets/js/htmlload.js"></script>
+    <script src="/assets/js/pagereload.js"></script>
+</head>
+
+<body style="background: rgb(249,250,254);min-height: 670px;height: 1068.4px;">
+    <script>
+$(document).ready(sidebarload());   
+       </script>
+    <nav class="navbar navbar-light navbar-expand-md" style="height: 67px;margin: 0px;margin-left: 2px;background-color: rgba(233,239,247,0.5);width: 1515px;box-shadow: 0px 4px 6px 0px rgb(188,197,205);filter: brightness(100%);border-radius: 20px;border-bottom-width: 3.4px;border-bottom-color: rgb(255,255,255);">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><img id="wangzhantubiao" src="https://www.acagrid.com/static/application/src/images/acagrid.png" style="width: 158px;margin: 0px;margin-left: 162px;margin-top: 11px;height: 49.7px;">
+            <div class="collapse navbar-collapse" id="navcol-1" style="height: 53px;margin-top: 7px;padding-left: 96px;font-size: 18px;padding-top: 32px;padding-bottom: 32px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="height: 105px;width: 107px;"><a class="nav-link active" href="#" style="padding: 5px;margin: 0;margin-right: 0px;margin-bottom: 0;margin-left: 20px;margin-top: 37px;width: 88px;height: 37px;font-size: 18px;font-weight: bold;color: #000000;"><span id="sttst" style="width: 88px;height: 37px;margin-left: 20px;">首页</span></a></li>
+                    <li class="nav-item" style="height: 105px;width: 107px;"><a class="nav-link" href="#" style="padding: 5px;margin: 0px;margin-right: 0px;margin-bottom: 0;margin-left: 20px;margin-top: 37px;width: 88px;font-size: 18px;font-weight: bold;color: #000000;"><span id="sttst">成果管理</span></a></li>
+                    <li class="nav-item" style="height: 105px;width: 107px;"><a class="nav-link" href="#" style="padding: 6px;margin: 0px;margin-right: 0px;margin-bottom: 0;margin-left: 20px;margin-top: 37px;width: 88px;height: 37px;font-size: 18px;font-weight: bold;color: #000000;"><span id="sttst">课题管理</span></a></li>
+                    <li class="nav-item" style="height: 105px;width: 107px;"><a class="nav-link" href="#" style="padding: 5px;margin: 0px;margin-right: 0px;margin-bottom: 0;margin-left: 20px;margin-top: 37px;width: 88px;font-size: 18px;font-weight: bold;color: #000000;"><span id="sttst">学术助手</span></a></li>
+                    <li class="nav-item"></li>
+                </ul><button class="btn btn-primary" type="button" onclick="uploadnew()" style="margin-left: 300px;margin-top: 8px;width: 111.8px;background: rgba(60,33,247,.75);">上传新增</button>
+                <div class="dropdown" style="margin-left: 90px;"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="https://img.okay.do/acagrid/static/images/default/avatar_200.png" style="width: 45px;height: 45px;"></a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#" style="font-weight: bold;">用户名显示</a><a class="dropdown-item" href="#">账户中心</a><a class="dropdown-item" href="#">退出登录</a></div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="background: #f1f4fa;margin-top: 25px;border-radius: 30px;height: 820px;">
+                <div class="d-flex align-items-start" style="margin-top: 25px;background: rgb(241,244,250);height: 763px;margin-left: 20px;">
+                    <ul class="nav nav-tabs nav flex-column nav-pills me-3" id="cebian"role="tablist" style="width: 191px;background: #ffffff;border-radius: 4px;">
+                        <li class="nav-item" role="presentation" style="border-radius: 20px;"><a class="nav-link" role="tab" data-bs-toggle="tab" style="background: rgba(60,33,247,.75);color: rgb(255,255,255);font-size: 18px;font-weight: bold;border-radius: 4px;" disable="enabled">资料夹</a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link active linkside" role="tab" data-bs-toggle="tab" href="#tab-2"><i class="fa fa-newspaper-o sidebaritem" style="margin-right: 9px;"></i><span style="font-weight: bold;">论文</span><span id="jishuqi" class="badge" style="border-radius: 25px;">1</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" id="ruanjianzuzuouan" href="#tab-3"><i class="fa fa-copyright sidebaritem" style="margin-right: 13px;"></i><span class="sidebaritem">软件著作权</span><span class="sidebaritem"></span><span id="jishuqi" class="badge" style="border-radius: 25px;">2</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-8" style="border-top-left-radius: 4px;border-color: var(--bs-indigo);"><i class="fa fa-star sidebaritem" style="margin-right: 12px;"></i><span style="font-weight: bold;">专利</span><span id="jishuqi" class="badge" style="border-radius: 25px;">3</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-7"><i class="fa fa-user sidebaritem" style="margin-right: 15px;"></i><span class="sidebaritem">个人获奖</span><span id="jishuqi" class="badge" style="border-radius: 25px;">4</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-6"><i class="fa fa-graduation-cap sidebaritem" style="margin-right: 7px;"></i><span class="sidebaritem">学生获奖</span><span id="jishuqi" class="badge" style="border-radius: 25px;">5</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-5"><i class="fa fa-book sidebaritem" style="margin-right: 14px;"></i><span class="sidebaritem">著作</span><span id="jishuqi" class="badge" style="border-radius: 25px;">6</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-4" style="border-radius: 4px;border-top-left-radius: 4px;"><i class="fas fa-leaf sidebaritem" style="width: 16px;margin-right: 12px;"></i><span class="sidebaritem">新闻报道</span><span id="jishuqi" class="badge" style="border-radius: 25px;">7</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-12"><i class="far fa-folder-open sidebaritem" style="margin-right: 10px;"></i><span class="sidebaritem">科研项目</span><span id="jishuqi" class="badge" style="border-radius: 25px;">8</span></a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-11"><i class="fa fa-circle-o-notch sidebaritem" style="margin-right: 13px;"></i><span class="sidebaritem">其他</span><span id="jishuqi" class="badge" style="border-radius: 25px;">9</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" style="background: rgba(60,33,247,.75);color: rgb(255,255,255);font-size: 18px;font-weight: bold;margin-top: 49px;border-radius: 4px;" disable="enabled">回收站</a></li>
+                        <li class="nav-item sideitems" role="presentation"><a class="nav-link linkside" role="tab" data-bs-toggle="tab" href="#tab-9"><i class="fa fa-trash-o sidebaritem" style="margin-right: 17px;"></i><span class="sidebaritem">回收站</span><span id="jishuqi" class="badge" style="border-radius: 25px;">10</span></a></li>
+                    </ul>
+                    <div class="tab-content" style="background: #ffffff;border-radius: 25px;box-shadow: 0px 3px 9px 3px rgb(188,197,205);height: 744px;width: 1045.8px;">
+                        <div class="tab-pane" role="tabpanel" id="tab-1">
+                            <p>Content for tab 1.</p>
+                        </div>
+                        <div class="tab-pane active" role="tabpanel" id="tab-2" style="height: 335.8px;">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist" style="border-radius: 0px;border-top-left-radius: 0px;width: 1045.8px;">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-16" style="border-top-left-radius: 25px;border-top-right-radius: 0px;">论文<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-17" style="color: rgb(73,80,87);border-top-left-radius: 0px;border-top-right-radius: 0px;">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" style="margin-left: 500px;"><button class="btn btn-primary" type="button" style="background: rgba(60,33,247,.75);">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-21"></a></li>
+                                </ul>
+                                <div class="tab-content" style="height: 730px;">
+                                    <div class="tab-pane active" role="tabpanel" id="tab-16" style="height: 680px;">
+                                        <div class="table-responsive table-primary" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 74px;">重要度</th>
+                                                        <th style="width: 400px;">论文信息</th>
+                                                        <th style="width: 70.6px;">排名</th>
+                                                        <th style="width: 150px;">发表时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="lunwen">
+                                                    <tr class="transform">
+                                                        <td style="padding-top: 19px;"><input type="checkbox"></td>
+                                                        <td style="padding-top: 19px;">12</td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">3</td>
+                                                        <td style="padding-top: 19px;">2022-2-11</td>
+                                                        <td>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu" style="margin-top: 5px;margin-left: 0px;margin-right: 40px;/*float: right;*/background-color: rgba(60,33,247,.75);">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div><a href="#" style="margin-top: 12px;padding-top: 0px;float: left;color: #6d59f9;">下载</a><a href="#" style="margin-top: 12px;float: left;margin-left: 18px;color: #6d59f9;">导出</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-menu" aria-expanded="false" data-bs-toggle="dropdown">Dropdown </button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button>
+                                            <button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17" style="height: 680px;">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">论文名称</th>
+                                                        <th style="width: 80.9px;">本人排名</th>
+                                                        <th style="margin-left: 4px;">发表杂志</th>
+                                                        <th style="width: 122px;">发表时间</th>
+                                                        <th style="width: 153.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-left: 34px;padding-top: 19px;">2</td>
+                                                        <td style="padding-top: 19px;">Cell 3</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-20">
+                                        <p>Tab content.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-21">
+                                        <p>Tab content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-13" style="border-top-left-radius: 25px;">软件著作权<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-14">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 452px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="tab-13" style="height: 706px;">
+                                        <div class="table-responsive table-primary" style="height: 694px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">著作权信息</th>
+                                                        <th style="width: 150px;">著作权类型</th>
+                                                        <th style="width: 150px;">开发完成时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform">
+                                                        <td style="padding-top: 19px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">软件制品</td>
+                                                        <td style="padding-top: 19px;">2022-2-11</td>
+                                                        <td>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu-1" style="margin-top: 5px;margin-left: 0px;margin-right: 38px;background-color: rgba(60,33,247,.75);float: right;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div><a href="#" style="margin-top: 12px;padding-top: 0px;float: left;color: #6d59f9;">下载</a><a href="#" style="margin-top: 12px;float: left;margin-left: 18px;color: #6d59f9;">导出</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-menu" aria-expanded="false" data-bs-toggle="dropdown">Dropdown </button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-14" style="height: 176.3px;">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">著作权信息</th>
+                                                        <th style="margin-left: 4px;width: 150px;">著作权类型</th>
+                                                        <th style="width: 150px;">发表时间</th>
+                                                        <th style="width: 150px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">软件制品</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-23">
+                                        <p>Tab content.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-22">
+                                        <p>Tab content.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-15">
+                                        <p>Content for tab 15.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-8">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-24" style="border-top-left-radius: 25px;">专利<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-25">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 500px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">专利名称</th>
+                                                        <th style="width: 70px;">排名</th>
+                                                        <th style="width: 150px;">专利类型</th>
+                                                        <th style="width: 150px;">授权公告日</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr style="height: 67px;">
+                                                        <td style="padding-top: 20px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 20px;">1/50</td>
+                                                        <td style="padding-top: 20px;">实用新型</td>
+                                                        <td style="padding-top: 20px;">2022-02-12</td>
+                                                        <td style="padding-top: 21px;">
+                                                            <div class="dropdown" style="width: 72px;float: right;margin-top: -7px;margin-left: 0px;margin-right: 17px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="float: right;display: inline-block;background-color: rgb(109,89,249);">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div><a href="#" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;border-style: none;color: #6d59f9;">导出</a><a href="#" style="margin-left: 20px;margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;color: #6d59f9;">下载</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox"></td>
+                                                        <td>Cell 4</td>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-24" style="width: 1045.8px;height: 234.5px;">
+                                        <div class="table-responsive" style="width: 1045.8px;height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">专利名称</th>
+                                                        <th style="width: 70px;">排名</th>
+                                                        <th style="width: 150px;">专利类型</th>
+                                                        <th style="width: 150px;">授权公告日</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 67px;">
+                                                        <td style="padding-top: 20px;"><input type="checkbox"></td>
+                                                        <td style="width: 400px;"><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;"><span class="first_yeah">奖项名称</span></td>
+                                                        <td style="padding-top: 20px;">1/50</td>
+                                                        <td style="padding-top: 20px;">实用新型</td>
+                                                        <td style="padding-top: 20px;">2022-02-12</td>
+                                                        <td style="padding-top: 21px;width: 199.2px;">
+                                                            <div class="dropdown" style="width: 72px;float: right;margin-top: -7px;margin-left: 0px;margin-right: 17px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="float: right;display: inline-block;background-color: rgb(109,89,249);margin-right: 9px;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div><a href="#" style="margin-left: 0px;margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;color: #6d59f9;">下载</a><a href="#" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;border-style: none;color: #6d59f9;margin-left: 18px;">导出</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-25" style="height: 176.3px;">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">专利名称</th>
+                                                        <th style="width: 100px;">本人排名</th>
+                                                        <th style="margin-left: 4px;width: 100px;">专利类型</th>
+                                                        <th style="width: 150px;">授权公告日</th>
+                                                        <th style="width: 150.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">一等奖</td>
+                                                        <td style="padding-top: 19px;">校级</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-7">
+                            <div style="border-radius: 0px;box-shadow: 0px 0px;">
+                                <ul class="nav nav-tabs" role="tablist" style="border-radius: 0px;">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-27" style="border-top-left-radius: 25px;">个人获奖<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-26">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 468px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" style="height: 300px;">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-27" style="height: 706px;">
+                                        <div class="table-responsive" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">荣誉信息</th>
+                                                        <th style="width: 100px;">获奖名次</th>
+                                                        <th style="width: 100px;">级别</th>
+                                                        <th style="width: 150px;">获奖时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 67px;">
+                                                        <td style="padding-top: 20px;"><input type="checkbox"></td>
+                                                        <td style="width: 400px;"><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;"><span>奖项名称</span></td>
+                                                        <td style="padding-top: 20px;">一等奖</td>
+                                                        <td style="padding-top: 20px;">实用新型</td>
+                                                        <td style="padding-top: 20px;">2022-02-12</td>
+                                                        <td style="padding-top: 21px;">
+                                                            <div class="dropdown" style="width: 72px;float: right;margin-top: -7px;margin-left: 0px;margin-right: 17px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="float: right;display: inline-block;background-color: rgb(109,89,249);">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div><a href="#" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;border-style: none;color: #6d59f9;">导出</a><a href="#" style="margin-left: 20px;margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;color: #6d59f9;">下载</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-26">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">荣誉信息</th>
+                                                        <th style="width: 100px;">获奖名次</th>
+                                                        <th style="margin-left: 4px;width: 100px;">级别</th>
+                                                        <th style="width: 150px;">发表时间</th>
+                                                        <th style="width: 150px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-left: 34px;padding-top: 19px;">2</td>
+                                                        <td style="padding-top: 19px;">Cell 3</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-6">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-29" style="border-top-left-radius: 25px;">学生获奖<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-28">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 468px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-29">
+                                        <div class="table-responsive" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">荣誉信息</th>
+                                                        <th style="width: 100px;">获奖名次</th>
+                                                        <th style="width: 100px;">级别</th>
+                                                        <th style="width: 150px;">获奖时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 67px;">
+                                                        <td style="padding-top: 20px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 20px;">一等奖</td>
+                                                        <td style="padding-top: 20px;">实用新型</td>
+                                                        <td style="padding-top: 20px;">2022-02-12</td>
+                                                        <td style="padding-top: 21px;">
+                                                            <div class="dropdown" style="width: 72px;float: right;margin-top: -7px;margin-left: 0px;margin-right: 17px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="float: right;display: inline-block;background-color: rgb(109,89,249);">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div><a href="#" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;border-style: none;color: #6d59f9;">导出</a><a href="#" style="margin-left: 20px;margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;color: #6d59f9;">下载</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-28" style="height: 760px;">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">荣誉信息</th>
+                                                        <th style="width: 100px;">获奖名次</th>
+                                                        <th style="margin-left: 4px;width: 100px;">级别</th>
+                                                        <th style="width: 150px;">发表时间</th>
+                                                        <th style="width: 150px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-left: 34px;padding-top: 19px;">2</td>
+                                                        <td style="padding-top: 19px;">Cell 3</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-5">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-31" style="border-top-left-radius: 25px;">著作<span style="margin-left: 12px;">1</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-30">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 521px;"><button class="btn btn-primary" type="button" style="background: rgb(109,89,249);">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-31">
+                                        <div class="table-responsive table-primary" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">著作权信息</th>
+                                                        <th style="width: 150px;">著作权类型</th>
+                                                        <th style="width: 150px;">开发完成时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform">
+                                                        <td style="padding-top: 19px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">软件制品</td>
+                                                        <td style="padding-top: 19px;">2022-2-11</td>
+                                                        <td>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu-2" style="margin-top: 5px;margin-left: 0px;margin-right: 38px;background-color: rgba(60,33,247,.75);float: right;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div><a href="#" style="margin-top: 12px;padding-top: 0px;float: left;color: #6d59f9;">下载</a><a href="#" style="margin-top: 12px;float: left;margin-left: 18px;color: #6d59f9;">导出</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-menu" aria-expanded="false" data-bs-toggle="dropdown">Dropdown </button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-30">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 400px;">著作信息</th>
+                                                        <th style="width: 69.9px;">身份</th>
+                                                        <th style="width: 120px;">发表时间</th>
+                                                        <th style="width: 153.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-top: 19px;width: 100px;">著作人</td>
+                                                        <td style="padding-top: 19px;width: 120px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-4">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-33" style="border-top-left-radius: 25px;">新闻报道<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-32">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 468px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-33">
+                                        <div class="table-responsive table-primary" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">新闻信息</th>
+                                                        <th style="width: 100px;">媒体级别</th>
+                                                        <th style="width: 150px;">开发完成时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform">
+                                                        <td style="padding-top: 19px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">国家</td>
+                                                        <td style="padding-top: 19px;">2022-2-11</td>
+                                                        <td>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu-3" style="margin-top: 5px;margin-left: 0px;margin-right: 38px;background-color: rgba(60,33,247,.75);float: right;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div><a href="#" style="margin-top: 12px;padding-top: 0px;float: left;color: #6d59f9;">下载</a><a href="#" style="margin-top: 12px;float: left;margin-left: 18px;color: #6d59f9;">导出</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-menu" aria-expanded="false" data-bs-toggle="dropdown">Dropdown </button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-32">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 400px;">新闻信息</th>
+                                                        <th style="width: 100px;">媒体级别</th>
+                                                        <th style="width: 120px;">发表时间</th>
+                                                        <th style="width: 153.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-left: -1px;padding-top: 19px;">国家级</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-12">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-35" style="border-top-left-radius: 25px;">科研项目<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-34">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 468px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-color: var(--bs-purple);">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-35">
+                                        <div class="table-responsive table-primary" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px;"><input type="checkbox"></th>
+                                                        <th style="width: 400px;">材料信息</th>
+                                                        <th style="width: 130px;">获得时间</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform">
+                                                        <td style="padding-top: 19px;"><input type="checkbox"></td>
+                                                        <td><img src="https://img.okay.do/acagrid/static/build/images/info/file_large.png" style="width: 39px;height: 49.3px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">2022-2-11</td>
+                                                        <td>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu-4" style="margin-top: 5px;margin-left: 0px;margin-right: 38px;background-color: rgba(60,33,247,.75);float: right;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div><a href="#" style="margin-top: 12px;padding-top: 0px;float: left;color: #6d59f9;">下载</a><a href="#" style="margin-top: 12px;float: left;margin-left: 40px;color: #6d59f9;">导出</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-menu" aria-expanded="false" data-bs-toggle="dropdown">Dropdown </button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-34">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">材料信息</th>
+                                                        <th style="width: 120px;">发表时间</th>
+                                                        <th style="width: 150.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-11">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-37" style="border-top-left-radius: 25px;">其他<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-36">草稿箱<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation" style="margin-left: 100px;"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-20" style="margin-left: 500px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;">上传</button></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-top: 9px;background: rgba(60,33,247,.75);">导出</a>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">导出引文</a><a class="dropdown-item" href="#">导出表格</a><a class="dropdown-item" href="#" style="border-top: 2px dashed rgb(183,189,195);margin-top: 0px;color: var(--bs-red);">删除</a></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column 1</th>
+                                                        <th>Column 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td>Cell 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane active" role="tabpanel" id="tab-37">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 339.8px;">材料名称</th>
+                                                        <th style="width: 100px;">本人排名</th>
+                                                        <th style="width: 120px;">获得时间</th>
+                                                        <th style="width: 153.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-left: 34px;padding-top: 19px;">2</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-36">
+                                        <div class="table-responsive table table-striped" style="height: 680px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th style="padding-right: 8px;padding-left: 17px;width: 400px;">材料信息</th>
+                                                        <th style="width: 120px;">获得时间</th>
+                                                        <th style="width: 150.6px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 66.8px;padding-top: 8px;">
+                                                        <td style="padding-top: 19px;"><i class="fa fa-file-o" style="padding-left: 6px;"></i></td>
+                                                        <td style="padding-left: 17px;padding-top: 19px;">国际金融</td>
+                                                        <td style="padding-top: 19px;">2022-02-11</td>
+                                                        <td style="padding-top: 19px;"><a href="#" style="color: #6d59f9;margin-right: 20px;">编辑</a><a href="#" style="color: var(--bs-red);">删除</a>
+                                                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="daochu-5" style="margin-top: -29px;margin-left: 0px;margin-right: 38px;background-color: rgba(60,33,247,.75);float: right;">更多</button>
+                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">编辑</a><a class="dropdown-item" href="#">分享</a><a class="dropdown-item" href="#" style="color: rgb(255,3,3);">删除</a></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-10">
+                            <p>Tab content.</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-9">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-38" style="border-top-left-radius: 25px;">回收站<span style="margin-left: 12px;">Text</span></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" style="margin-left: 708px;"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-top-right-radius: 4px;">清空回收站</button></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="tab-38">
+                                        <div class="table-responsive" style="height: 695px;">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 20px;"></th>
+                                                        <th>文件名称</th>
+                                                        <th style="width: 250px;">文件类型</th>
+                                                        <th style="width: 200px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="transform" style="height: 47.5px;">
+                                                        <td style="width: 20px;"><i class="fa fa-file"></i></td>
+                                                        <td style="padding-left: 12px;">好好好</td>
+                                                        <td style="padding-left: 12px;">论文</td>
+                                                        <td><a href="#" style="color: #6d59f9;margin-right: 20px;">恢复</a><a href="#" style="color: var(--bs-red);">彻底删除</a></td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 10px;">1</button><button class="btn btn-primary" type="button" style="background: #6d59f9;border-style: none;border-radius: 10px;margin-left: 3px;">2</button></div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-17">
+                                        <p>Content for tab 17.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-18">
+                                        <p>Content for tab 18.</p>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-19">
+                                        <p>Tab content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-clean" style="border-radius: 35px;border-top-left-radius: 35px;border-top-right-radius: 35px;margin-top: 60px;height: 169.4px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">东北石油大学</a></li>
+                        <li><a href="#">好好好</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Company Name © 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

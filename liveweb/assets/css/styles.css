@@ -1,0 +1,55 @@
+#wangzhantubiao {
+  height: 30px;
+  margin-left: 200px;
+}
+
+#shouyebtn {
+  margin-left: 100px;
+}
+
+#shangchuanxinzeng {
+  background-color: initial;
+  margin-left: 350px;
+  color: var(--bs-blue);
+}
+
+#searchbtn {
+  width: 50px;
+}
+
+#ziliaojia {
+  background-color: inherit;
+  color: var(--bs-gray-dark);
+}
+
+#huishouzhan {
+  color: var(--bs-dark);
+  margin-top: 50px;
+}
+
+#huishouzhanlink {
+  color: var(--bs-gray-dark);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: rgb(91,114,214);
+}
+
+#tabsss {
+  margin-top: 10px;
+}
+
+#shangchuan {
+  margin-left: 860px;
+}
+
+#daochu {
+  margin-left: 960px;
+  margin-top: -64px;
+}
+
+#zhongjianbiaoge {
+  margin-top: -60px;
+}
+

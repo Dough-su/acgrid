@@ -1,0 +1,421 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAD24D0E-8E9D-47BB-A8EF-1ED913C535FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>liveweb</RootNamespace>
+    <AssemblyName>liveweb</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44318</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\Footer-Clean.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\font-awesome.min.css" />
+    <Content Include="assets\fonts\fontawesome-all.min.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\fontawesome5-overrides.min.css" />
+    <Content Include="assets\fonts\ionicons.min.css" />
+    <Content Include="assets\fonts\ionicons.svg" />
+    <Content Include="assets\img\irp.png" />
+    <Content Include="assets\js\htmlload.js" />
+    <Content Include="assets\js\pagereload.js" />
+    <Content Include="css\fileinput-rtl.css" />
+    <Content Include="css\fileinput-rtl.min.css" />
+    <Content Include="css\fileinput.css" />
+    <Content Include="css\fileinput.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="JavaScript.js" />
+    <Content Include="jquery-3.6.0.js" />
+    <Content Include="js\fileinput.js" />
+    <Content Include="js\fileinput.min.js" />
+    <Content Include="js\locales\ar.js" />
+    <Content Include="js\locales\az.js" />
+    <Content Include="js\locales\bg.js" />
+    <Content Include="js\locales\ca.js" />
+    <Content Include="js\locales\cr.js" />
+    <Content Include="js\locales\cs.js" />
+    <Content Include="js\locales\da.js" />
+    <Content Include="js\locales\de.js" />
+    <Content Include="js\locales\el.js" />
+    <Content Include="js\locales\es.js" />
+    <Content Include="js\locales\et.js" />
+    <Content Include="js\locales\fa.js" />
+    <Content Include="js\locales\fi.js" />
+    <Content Include="js\locales\fr.js" />
+    <Content Include="js\locales\gl.js" />
+    <Content Include="js\locales\he.js" />
+    <Content Include="js\locales\hu.js" />
+    <Content Include="js\locales\id.js" />
+    <Content Include="js\locales\it.js" />
+    <Content Include="js\locales\ja.js" />
+    <Content Include="js\locales\ka.js" />
+    <Content Include="js\locales\kr.js" />
+    <Content Include="js\locales\kz.js" />
+    <Content Include="js\locales\LANG.js" />
+    <Content Include="js\locales\lt.js" />
+    <Content Include="js\locales\lv.js" />
+    <Content Include="js\locales\nl.js" />
+    <Content Include="js\locales\no.js" />
+    <Content Include="js\locales\pl.js" />
+    <Content Include="js\locales\pt-BR.js" />
+    <Content Include="js\locales\pt.js" />
+    <Content Include="js\locales\ro.js" />
+    <Content Include="js\locales\ru.js" />
+    <Content Include="js\locales\sk.js" />
+    <Content Include="js\locales\sl.js" />
+    <Content Include="js\locales\sr-latn.js" />
+    <Content Include="js\locales\sv.js" />
+    <Content Include="js\locales\th.js" />
+    <Content Include="js\locales\tr.js" />
+    <Content Include="js\locales\uk.js" />
+    <Content Include="js\locales\uz-cyrl.js" />
+    <Content Include="js\locales\uz.js" />
+    <Content Include="js\locales\vi.js" />
+    <Content Include="js\locales\zh-TW.js" />
+    <Content Include="js\locales\zh.js" />
+    <Content Include="js\plugins\piexif.js" />
+    <Content Include="js\plugins\piexif.min.js" />
+    <Content Include="js\plugins\sortable.js" />
+    <Content Include="js\plugins\sortable.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="lunwenbinaji\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lunwenbinaji\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lunwenbinaji\assets\css\styles.css" />
+    <Content Include="lunwenbinaji\assets\js\load.js" />
+    <Content Include="lunwenbinaji\index.html" />
+    <Content Include="pdfobject.js" />
+    <Content Include="pdfview.html" />
+    <Content Include="static\css\5b765b3ac895451aa3ff32d543ef5373.css" />
+    <Content Include="static\css\animate.css" />
+    <Content Include="static\css\bootstrap.min.css" />
+    <Content Include="static\css\custom.css" />
+    <Content Include="static\css\fontawesome-all-min.css" />
+    <Content Include="static\css\media-query.css" />
+    <Content Include="static\css\slick-theme.css" />
+    <Content Include="static\css\slick.css" />
+    <Content Include="static\images\bg-shap-1.png" />
+    <Content Include="static\images\bg-shap-2.png" />
+    <Content Include="static\images\bg-shap-3.png" />
+    <Content Include="static\images\bg-shap-4.png" />
+    <Content Include="static\images\bg-shap-5.png" />
+    <Content Include="static\images\email-bg-pattern.png" />
+    <Content Include="static\images\shape-9.png" />
+    <Content Include="static\images\testimonial--shapeellipse.png" />
+    <Content Include="static\images\trip-1.png" />
+    <Content Include="static\js\ajax-jquery.min.js" />
+    <Content Include="static\js\bootstrap.min.js" />
+    <Content Include="static\js\custom.js" />
+    <Content Include="static\js\jquery-3.4.1.slim.min.js" />
+    <Content Include="static\js\popper.min.js" />
+    <Content Include="static\js\slick.js" />
+    <Content Include="static\js\slick.min.js" />
+    <Content Include="static\js\wow.min.js" />
+    <Content Include="static\picture\category-image-1.png" />
+    <Content Include="static\picture\category-image-2.png" />
+    <Content Include="static\picture\category-image-3.png" />
+    <Content Include="static\picture\category-image-4.png" />
+    <Content Include="static\picture\dottd-squre.png" />
+    <Content Include="static\picture\footer-shap-1.png" />
+    <Content Include="static\picture\footer-shap-3.png" />
+    <Content Include="static\picture\image-1.png" />
+    <Content Include="static\picture\image-2.png" />
+    <Content Include="static\picture\image-3.png" />
+    <Content Include="static\picture\image-4.png" />
+    <Content Include="static\picture\logo.png" />
+    <Content Include="static\picture\round-shape.png" />
+    <Content Include="static\picture\shape-1.png" />
+    <Content Include="static\picture\shape-3.png" />
+    <Content Include="static\picture\shape-5.png" />
+    <Content Include="static\picture\shape-6.png" />
+    <Content Include="static\picture\shape-8.png" />
+    <Content Include="static\picture\slider-image.png" />
+    <Content Include="static\picture\t-1.png" />
+    <Content Include="static\picture\t-2.png" />
+    <Content Include="static\picture\t-3.png" />
+    <Content Include="static\picture\t-4.png" />
+    <Content Include="static\picture\t-5.png" />
+    <Content Include="upload.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bianji.ashx.cs">
+      <DependentUpon>bianji.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getdata.ashx.cs">
+      <DependentUpon>getdata.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sidebar.ashx.cs">
+      <DependentUpon>sidebar.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\NEOTERICc.ttf" />
+    <Content Include="getdata.ashx" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\ionicons.eot" />
+    <Content Include="assets\fonts\ionicons.ttf" />
+    <Content Include="assets\fonts\ionicons.woff" />
+    <Content Include="upload.ashx" />
+    <Content Include="lunwenbinaji\assets\js\untitled.json" />
+    <Content Include="bianji.ashx" />
+    <None Include="packages.config" />
+    <Content Include="static\fonts\fa-brands-400.woff2" />
+    <Content Include="static\fonts\fa-solid-900.woff2" />
+    <Content Include="static\fonts\jtuojig1_i6t8kchkm459wxzqh7g29nnpq.woff2" />
+    <Content Include="static\fonts\jtuojig1_i6t8kchkm459wxzqh7k29m.woff2" />
+    <Content Include="static\fonts\jtuojig1_i6t8kchkm459wxzqh7p29nnpq.woff2" />
+    <Content Include="static\fonts\jtuojig1_i6t8kchkm459wxzqh7q29nnpq.woff2" />
+    <Content Include="static\fonts\jtuojig1_i6t8kchkm459wxzqh7r29nnpq.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbgjz-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbgjz8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbgjz8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbgjz8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbgjz_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbg_z-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbg_z8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbg_z8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbg_z8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzbg_z_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzcgvz-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzcgvz8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzcgvz8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzcgvz8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzcgvz_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzfgrz-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzfgrz8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzfgrz8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzfgrz8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzfgrz_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzog3z-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzog3z8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzog3z8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzog3z8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzog3z_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzsgnz-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzsgnz8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzsgnz8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzsgnz8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzsgnz_pzw.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzygzz-pzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzygzz8fzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzygzz8vzwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzygzz8_zwnco.woff2" />
+    <Content Include="static\fonts\jtupjig1_i6t8kchkm459wxzygzz_pzw.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm459wxrxc7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm459wxrxi7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm459wxrxy7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm459wxrys7m.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm459wxrzs7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm45_qprxc7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm45_qprxi7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm45_qprxy7mw9c.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm45_qprys7m.woff2" />
+    <Content Include="static\fonts\jtuqjig1_i6t8kchkm45_qprzs7mw9c.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_aza3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_aza3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_aza3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_aza3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_aza3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_bzf3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_bzf3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_bzf3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_bzf3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_bzf3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_c5h3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_c5h3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_c5h3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_c5h3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_c5h3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_cjd3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_cjd3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_cjd3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_cjd3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_cjd3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_dje3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_dje3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_dje3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_dje3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_dje3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_epg3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_epg3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_epg3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_epg3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_epg3gtd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_zpc3g3d_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_zpc3gbd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_zpc3gfd_u50.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_zpc3gnd_g.woff2" />
+    <Content Include="static\fonts\jturjig1_i6t8kchkm45_zpc3gtd_u50.woff2" />
+    <Content Include="static\fonts\jtusjig1_i6t8kchkm459w1hyzbi.woff2" />
+    <Content Include="static\fonts\jtusjig1_i6t8kchkm459wdhyzbi.woff2" />
+    <Content Include="static\fonts\jtusjig1_i6t8kchkm459wlhyw.woff2" />
+    <Content Include="static\fonts\jtusjig1_i6t8kchkm459wrhyzbi.woff2" />
+    <Content Include="static\fonts\jtusjig1_i6t8kchkm459wzhyzbi.woff2" />
+    <Content Include="sidebar.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{234dd494-c4f1-4117-9ece-f40f44843a37}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\common\Common.csproj">
+      <Project>{19672b25-f4c2-4d9f-beb0-4d8d710552bd}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{bbee72c8-830d-472a-bd85-576739ce6d57}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56832</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44318/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:56832/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
