@@ -31,6 +31,7 @@ namespace liveweb
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = "Password=Su56656488xin@;User ID=sa;Initial Catalog=liveweb;Data Source=114.96.100.98";
             conn.Open();
+          
             string sql = "select * from " + meth + " where username=" + name + "and paperid="+paperid+"";
             //定义字符串，" "中的字符串可以在sql server中运行，运行结果就是一会要读取的数据表，表名为上面数据库名称里面的表； 
             SqlCommand sqlcomm = new SqlCommand(sql, conn);

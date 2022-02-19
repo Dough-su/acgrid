@@ -45,6 +45,7 @@
     <Compile Include="authorinformation.cs" />
     <Compile Include="lunwen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ruanjianzhuzuoquan.cs" />
     <Compile Include="UserInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

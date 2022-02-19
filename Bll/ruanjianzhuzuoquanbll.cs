@@ -5,20 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using Models;
-
 namespace Bll
 {
-    public class lunwenBll
+    public class ruanjianzhuzuoquanbll
     {
-        lunwenDal dal = new lunwenDal();
+        ruanjianzhuzuoquanDal dal = new ruanjianzhuzuoquanDal();
 
 
-   
-        public int Update(lunwen model)//更新操作
+
+        public int Update(ruanjianzhuzuoquan model)//更新操作
         {
             return dal.Update(model);
         }
-        public int Insert(lunwen model)//插入数据
+        public int Insert(ruanjianzhuzuoquan model)//插入数据
         {
             return dal.Insert(model);
         }

@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="lunwenDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ruanjianzhuzuoquanDal.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="UserInfoDal.cs" />
   </ItemGroup>

@@ -155,6 +155,12 @@
     <Content Include="lunwenbinaji\index.html" />
     <Content Include="pdfobject.js" />
     <Content Include="pdfview.html" />
+    <Content Include="ruanjianzhuzuoquan\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ruanjianzhuzuoquan\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ruanjianzhuzuoquan\assets\css\styles.css" />
+    <Content Include="ruanjianzhuzuoquan\assets\js\jquery-3.6.0.js" />
+    <Content Include="ruanjianzhuzuoquan\assets\js\ruanjian.js" />
+    <Content Include="ruanjianzhuzuoquan\index.html" />
     <Content Include="static\css\5b765b3ac895451aa3ff32d543ef5373.css" />
     <Content Include="static\css\animate.css" />
     <Content Include="static\css\bootstrap.min.css" />

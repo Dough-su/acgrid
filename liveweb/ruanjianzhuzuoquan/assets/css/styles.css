@@ -1,0 +1,40 @@
+.doc-wrap {
+  background-color: #ffffff;
+}
+
+.pdfobject-container {
+  height: 500px;
+}
+
+.pdfobject {
+  border: 1px solid #666;
+}
+
+.doc-wrap {
+  margin-top: 24px;
+  background-color: white;
+}
+
+.form-group {
+  margin-left: 10px;
+}
+
+#filter_puttime {
+  margin-top: -40px;
+}
+
+.col-sm-3 {
+  width: 9%;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"] {
+  top: -2px;
+}
+
+.required {
+  position: absolute;
+  color: #f04134;
+  right: 10px;
+  font-size: 12px;
+}
+
