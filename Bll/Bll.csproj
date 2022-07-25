@@ -42,10 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dangancailiaobll.cs" />
+    <Compile Include="gerenhuojiangbll.cs" />
+    <Compile Include="hengxiangketibll.cs" />
     <Compile Include="lunwenBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qitabll.cs" />
     <Compile Include="ruanjianzhuzuoquanbll.cs" />
     <Compile Include="UserInfoBll.cs" />
+    <Compile Include="xinwenbaodaobll.cs" />
+    <Compile Include="xueshenghuojiangbll.cs" />
+    <Compile Include="zhuanlibll.cs" />
+    <Compile Include="zhuzuobll.cs" />
+    <Compile Include="zongxiangketibll.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

@@ -12,8 +12,9 @@ namespace DAL
     {
         public int Update(lunwen model)//更新操作
         {
-            string sql = "update lunwen set code=@code,rank=@rank,time=@time,DOI号=@DOI号,引用次数=@引用次数,关键词=@关键词,起止页码=@起止页码,关联课题=@关联课题,成果同步=@成果同步,影响因子=@影响因子,卷号=@卷号,期号=@期号,ISSN号=@ISSN号,CN号=@CN号,摘要=@摘要,备注信息=@备注信息,download=@download,export=@export,edit=@edit ,kanwumingcheng=@kanwumingcheng,lunwenlingyu=@lunwenlingyu,duzhu=@duzhu,tongxunzuozhe=@tongxunzuozhe,EI=@EI,ISTP=@ISTP,ISSHP=@ISSHP,PKU=@PKU,SCD=@SCD,CSCDE=@CSCDE,省级期刊=@省级期刊,ESCI=@ESCI,SSCI=@SSCI,其他=@其他,CSSCI扩展版=@CSSCI扩展版,自然指数杂志=@自然指数杂志,SCIE=@SCIE,SCI=@SCI,会议期刊=@会议期刊,科研核心=@科研核心,国家级期刊=@国家级期刊,AHCI=@AHCI,校内核心=@校内核心,share=@share,CSSCI=@CSSCI,CSCD=@CSCD,name=@name,lunwenleixing=@lunwenleixing where username=@username and paperid=@paperid ";
+            string sql = "update lunwen set code=@code,caogao=@caogao,rank=@rank,time=@time,DOI号=@DOI号,引用次数=@引用次数,关键词=@关键词,起止页码=@起止页码,关联课题=@关联课题,成果同步=@成果同步,影响因子=@影响因子,卷号=@卷号,期号=@期号,ISSN号=@ISSN号,CN号=@CN号,摘要=@摘要,备注信息=@备注信息,download=@download,export=@export,edit=@edit ,kanwumingcheng=@kanwumingcheng,lunwenlingyu=@lunwenlingyu,duzhu=@duzhu,tongxunzuozhe=@tongxunzuozhe,EI=@EI,ISTP=@ISTP,ISSHP=@ISSHP,PKU=@PKU,SCD=@SCD,CSCDE=@CSCDE,省级期刊=@省级期刊,ESCI=@ESCI,SSCI=@SSCI,其他=@其他,CSSCI扩展版=@CSSCI扩展版,自然指数杂志=@自然指数杂志,SCIE=@SCIE,SCI=@SCI,会议期刊=@会议期刊,科研核心=@科研核心,国家级期刊=@国家级期刊,AHCI=@AHCI,校内核心=@校内核心,share=@share,CSSCI=@CSSCI,CSCD=@CSCD,name=@name,lunwenleixing=@lunwenleixing where username=@username and paperid=@paperid ";
             SqlParameter[] pms = new SqlParameter[] {
+                 new SqlParameter("caogao",System.Data.SqlDbType.VarChar,255 ){ Value=model.caogao},
                 new SqlParameter("username",System.Data.SqlDbType.VarChar,255 ){ Value=model.username},
                 new SqlParameter("code",System.Data.SqlDbType.VarChar,255){ Value=model.code},
                 new SqlParameter("name",System.Data.SqlDbType.VarChar,255){ Value=model.name},
@@ -69,9 +70,11 @@ new SqlParameter("备注信息",System.Data.SqlDbType.VarChar,255){Value=model.�
         }
         public int Insert(lunwen model)//增加记录
         {
-            string sql = "insert into lunwen values(@code, @name, @rank, @time, @download, @export, @edit, @share, @username, @CSSCI, @CSCD, @paperid, @lunwenleixing, @lunwenlingyu, @省级期刊, @tongxunzuozhe, @kanwumingcheng, @duzhu, @EI, @ISTP, @ISSHP, @PKU, @SCD, @CSCDE, @ESCI, @SSCI, @其他, @CSSCI扩展版, @自然指数杂志, @SCIE, @SCI, @会议期刊, @科研核心, @国家级期刊, @AHCI, @校内核心, @DOI号, @引用次数, @关键词, @起止页码, @关联课题, @成果同步, @影响因子, @卷号, @期号, @ISSN号, @CN号, @摘要, @备注信息)";
+            string sql = "insert into lunwen values(@code, @name, @rank, @time, @download, @export, @edit, @share, @username, @CSSCI, @CSCD, @paperid, @lunwenleixing, @lunwenlingyu, @省级期刊, @tongxunzuozhe, @kanwumingcheng, @duzhu, @EI, @ISTP, @ISSHP, @PKU, @SCD, @CSCDE, @ESCI, @SSCI, @其他, @CSSCI扩展版, @自然指数杂志, @SCIE, @SCI, @会议期刊, @科研核心, @国家级期刊, @AHCI, @校内核心, @DOI号, @引用次数, @关键词, @起止页码, @关联课题, @成果同步, @影响因子, @卷号, @期号, @ISSN号, @CN号, @摘要, @备注信息,@caogao)";
             SqlParameter[] pms = new SqlParameter[] {
              new SqlParameter("username",System.Data.SqlDbType.VarChar,255 ){ Value=model.username},
+                                
+
                 new SqlParameter("code",System.Data.SqlDbType.VarChar,255){ Value=model.code},
                 new SqlParameter("name",System.Data.SqlDbType.VarChar,255){ Value=model.name},
                 new SqlParameter("rank",System.Data.SqlDbType.VarChar,255){ Value=model.rank},
@@ -119,7 +122,8 @@ new SqlParameter("ISSN号",System.Data.SqlDbType.VarChar,255){Value=model.ISSN�
 new SqlParameter("CN号",System.Data.SqlDbType.VarChar,255){Value=model.CN号},
 new SqlParameter("摘要",System.Data.SqlDbType.VarChar,255){Value=model.摘要},
 new SqlParameter("备注信息",System.Data.SqlDbType.VarChar,255){Value=model.备注信息},
-                new SqlParameter("校内核心",System.Data.SqlDbType.VarChar,255){Value=model.校内核心} };
+                new SqlParameter("校内核心",System.Data.SqlDbType.VarChar,255){Value=model.校内核心},
+            new SqlParameter("caogao",System.Data.SqlDbType.VarChar,255 ){ Value=model.caogao}};
             return SqlHelper.ExecuteNonQuery(sql, System.Data.CommandType.Text, pms);
 
         }

@@ -10,6 +10,10 @@ namespace Bll
         {
             return dal.logincheck(user, pwd);
         }
+        public int update(UserInfo model)
+        { 
+        return dal.update(model);
+        }
         public int signincheck(string user)
         {
             return dal.signincheck(user);
@@ -17,6 +21,14 @@ namespace Bll
         public int Insert(UserInfo model)//插入数据
         {
             return dal.Insert(model);
+        }
+        public int ListUserInfo(string username)
+        { 
+            return dal.ListUserInfo(username);
+        }
+        public int Avater(string username, string Avater)
+        { 
+            return dal.Avater(username, Avater);
         }
     }
 }

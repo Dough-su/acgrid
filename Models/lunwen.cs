@@ -57,8 +57,6 @@ namespace Models
         public string CN号 { get; set; }
         public string 摘要 { get; set; }
         public string 备注信息 { get; set; }
-
-
-
+        public string caogao { get; set; }
     }
 }

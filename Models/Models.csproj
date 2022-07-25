@@ -43,10 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="authorinformation.cs" />
+    <Compile Include="dangancailiao.cs" />
+    <Compile Include="gerenhuojiang.cs" />
+    <Compile Include="hengxiangketi.cs" />
     <Compile Include="lunwen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qita.cs" />
     <Compile Include="ruanjianzhuzuoquan.cs" />
     <Compile Include="UserInfo.cs" />
+    <Compile Include="xinwenbaodao.cs" />
+    <Compile Include="xueshenghuojiang.cs" />
+    <Compile Include="zhuanli.cs" />
+    <Compile Include="zhuzuo.cs" />
+    <Compile Include="zongxiangketi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,6 +26,7 @@ namespace Models
         public string 著作权人 { get; set; }
         public string 关联课题 { get; set; }
         public string 备注信息 { get; set; }
+        public string caogao { get; set; }
 
     }
 }
