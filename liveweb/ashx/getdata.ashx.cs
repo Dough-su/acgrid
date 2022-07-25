@@ -1,5 +1,4 @@
-﻿using Bll;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
@@ -13,8 +12,6 @@ using System.Reflection;
 using System.Text;
 using System.Web;
 using System.Xml.Linq;
-using Models;
-using Bll.Bll;
 using System.Configuration;
 
 namespace liveweb

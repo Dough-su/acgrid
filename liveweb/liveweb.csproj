@@ -2036,20 +2036,6 @@
     <Content Include="ashx\sidebar.ashx" />
     <Content Include="upload\1645607516384.pdf" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bll\Bll.csproj">
-      <Project>{234dd494-c4f1-4117-9ece-f40f44843a37}</Project>
-      <Name>Bll</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\common\Common.csproj">
-      <Project>{19672b25-f4c2-4d9f-beb0-4d8d710552bd}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{bbee72c8-830d-472a-bd85-576739ce6d57}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

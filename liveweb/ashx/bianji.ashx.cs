@@ -8,7 +8,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Web;
-using Bll;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
